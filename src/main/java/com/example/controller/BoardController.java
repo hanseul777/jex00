@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/board/*") //board로 시작하는 모든 request는 이 controller를 거친다
+// 타입(클래스선언부) , 메서드에서 사용한다.
+@RequestMapping("/board/*") //board로 시작하는 모든 request는 이 controller를 거친다 : 해당 url로 시작하면 여기로 와라
 @Log4j2
 public class BoardController {
 
