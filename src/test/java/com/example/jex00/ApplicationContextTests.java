@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class ApplicationContextTests { // ApplicationContext 생성확인
 
     @Autowired
-    ApplicationContext applicationContext;
+    ApplicationContext applicationContext; //객체가 만들어짐 -> 잘 생성되는지 확인
 
     @Autowired
     ArrayList<String> names;
@@ -41,8 +41,8 @@ public class ApplicationContextTests { // ApplicationContext 생성확인
     public void test1() {
         log.info("-----------------------------");
         log.info("-----------------------------");
-        log.info("applicationContext");
-        log.info("names");
+        log.info(applicationContext); //org.springframework.context.support.GenericApplicationContext@c2634e5,-> 객체주소출력
+        log.info(names);
         log.info("-----------------------------");
         log.info("-----------------------------");
     }
